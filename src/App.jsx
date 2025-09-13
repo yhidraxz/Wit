@@ -4,7 +4,7 @@ import { Home } from "./page/HomePage.jsx";
 function App() {
   return (
     <div data-theme="dark">
-      <BrowserRouter>
+      <BrowserRouter basename="/Wit">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
