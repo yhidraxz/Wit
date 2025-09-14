@@ -117,7 +117,7 @@ export function VideoSection() {
     <section className="w-full h-screen relative bg-gradient-to-b from-base-100 to-black overflow-hidden">
       <video
         ref={videoRef}
-        src="/src/assets/naoAcademia.mp4"
+        src="/NaoSomosAcademia.mp4"
         className={`absolute top-0 left-0 w-full h-full object-cover transition-all duration-700 ease-out
           ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         playsInline

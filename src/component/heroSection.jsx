@@ -5,22 +5,26 @@ export function HeroSection() {
     <section
       className={`
         relative w-full h-screen bg-cover bg-center
-        bg-[url('/src/assets/fachadaWitMob.png')] sm:bg-[url('/src/assets/fachadaWit.png')]
+        bg-[url('/MobHeroSection.webp')] sm:bg-[url('/src/assets/fachadaWit.png')]
       `}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-[#232323]/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-transparent to-60%"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/95  to-transparent to-50%"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+      <div className="relative z-10 flex flex-col items-center justify-start h-full text-center px-4">
         {/* Title */}
-        <h1 className="text-5xl md:text-6xl font-extrabold  drop-shadow-md">
-          Wit Boutique Studio
+        <h1 className="mt-24 text-4xl md:text-6xl font-extrabold  drop-shadow-md">
+          <span className="text-primary">Poucos</span> têm acesso.. <br />
+          Mas <span className="text-primary">todos</span> percebem o resultado
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-primary max-w-2xl mb-8">
-          A boutique creative studio for inspired minds ✨
+        <p className="text-base font-bold md:text-xl text-primary max-w-2xl mb-8">
+          Tenha uma experiência de performance e bem-estar, para a elite que
+          valoriza tempo e resultados.
         </p>
 
         {/* Silver Button with polished effect */}

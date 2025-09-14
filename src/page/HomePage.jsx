@@ -18,7 +18,7 @@ export function Home() {
       <AboutSection />
       <section className="relative w-full bg-base-100">
         {/* Heading section */}
-        <div className="py-4 md:px-20 text-center">
+        <div className="py-4 md:px-20 text-center bg-black/80">
           <h2 className="text-3xl md:text-4xl font-extrabold bg-silver-gradient bg-clip-text text-transparent">
             Nós NÃO somos uma academia..
           </h2>
@@ -34,7 +34,6 @@ export function Home() {
       </section>
       <section>
         <VideoCarouselSection />
-        <TestVideo />
       </section>
       <section id="formulario">
         <HomeForm />

@@ -117,7 +117,7 @@ export function TeamVideoSection() {
     <section className="w-full h-screen relative bg-gradient-to-br from-black to-base-100 overflow-hidden">
       <video
         ref={videoRef}
-        src="/src/assets/TimeWit.mp4"
+        src="/TimeWit.mp4"
         className={`absolute top-0 left-0 w-full h-full object-cover transition-all duration-700 ease-out
           ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         playsInline

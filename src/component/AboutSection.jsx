@@ -2,7 +2,8 @@
 
 export function AboutSection() {
   return (
-    <section className="relative w-full bg-base-100 py-20 px-6 md:px-20">
+    <section className="relative w-full bg-gradient-to-b from-black/95 to-base-100 to-60% py-20 px-6 md:px-20">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent to-50%"></div>
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Photo */}
         <div className="w-full md:w-1/2 flex justify-center">
