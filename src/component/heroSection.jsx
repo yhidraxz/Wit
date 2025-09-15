@@ -16,13 +16,13 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-start h-full text-center px-4 ml:justify-center">
         {/* Title */}
-        <h1 className="mt-24 text-4xl md:text-6xl font-extrabold drop-shadow-md ml:mt-9 ml:pb-8">
+        <h1 className="mt-24 text-4xl md:text-6xl font-extrabold drop-shadow-md ml:pb-8">
           <span className="text-primary">Poucos</span> têm acesso.. <br />
           Mas <span className="text-primary">todos</span> percebem o resultado
         </h1>
 
         {/* Subtitle */}
-        <p className="text-base font-sans-serif sm:text-4xl text-base-light-100 max-w-2xl mb-8">
+        <p className="text-base font-sans-serif sm:text-4xl text-base-light-100 max-w-2xl mb-12">
           Tenha uma experiência de performance e bem estar, para a{" "}
           <span className="text-base-light-100">elite</span> que valoriza tempo,
           resultado e saúde
