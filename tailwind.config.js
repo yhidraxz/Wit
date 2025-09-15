@@ -23,9 +23,14 @@ export default {
       backgroundImage: {
         "silver-gradient":
           "linear-gradient(135deg, #f9f9f9 0%, #d9d9d9 15%, #a0a0a0 30%, #f9f9f9 50%, #8a8a8a 70%, #e6e6e6 85%, #b0b0b0 100%)",
+        "gold-gradient":
+          "linear-gradient(135deg, #fff1b8 0%, #f6e27a 20%, #d4af37 45%, #b8860b 65%, #e7c74d 80%, #fff8d0 100%)",
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui"],
+      },
+      screens: {
+        ml: "400px", // 📱 mobile L breakpoint
       },
     },
   },

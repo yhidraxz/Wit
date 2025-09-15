@@ -7,6 +7,7 @@ import {
   FaLeaf,
   FaSpa,
 } from "react-icons/fa";
+import React from "react";
 
 export function BulletSection() {
   const benefits = [
@@ -32,7 +33,7 @@ export function BulletSection() {
     },
     {
       icon: <FaDumbbell />,
-      title: "Comforto e segurança",
+      title: "Conforto e segurança",
       text: "Atenção individual para técnica, segurança e evolução",
     },
   ];
@@ -52,7 +53,7 @@ export function BulletSection() {
 
       <div className="relative z-10 pt-20 pb-6 px-6 md:px-20 bg-gradient-to-tr from-black to-base-100">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-4xl md:text-3xl font-extrabold text-left mb-6 text-primary">
+          <h3 className="text-4xl md:text-3xl font-extrabold text-left mb-6 text-primary bg-gold-gradient bg-clip-text text-transparent">
             Não está convencido?..
           </h3>
 
@@ -64,7 +65,31 @@ export function BulletSection() {
               >
                 <div className="flex items-start gap-4">
                   <div className="flex-none w-11 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-xl">
-                    {b.icon}
+                    <svg
+                      className="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="url(#goldGradient)"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="goldGradient"
+                          x1="0%"
+                          y1="0%"
+                          x2="100%"
+                          y2="100%"
+                        >
+                          <stop offset="0%" stopColor="#f6e27a" />
+                          <stop offset="25%" stopColor="#e7c74d" />
+                          <stop offset="50%" stopColor="#d4af37" />
+                          <stop offset="75%" stopColor="#b8860b" />
+                          <stop offset="100%" stopColor="#f6e27a" />
+                        </linearGradient>
+                      </defs>
+                      {React.cloneElement(b.icon, {
+                        fill: "url(#goldGradient)",
+                      })}
+                    </svg>
                   </div>
                   <div>
                     <h4 className="font-semibold text-base-light-100">
@@ -83,7 +108,7 @@ export function BulletSection() {
               className="inline-block px-6 py-3 rounded-lg font-semibold text-[#232323] shadow-md"
               style={{
                 background:
-                  "linear-gradient(135deg, #f9f9f9 0%, #d9d9d9 15%, #a0a0a0 30%, #f9f9f9 50%, #8a8a8a 70%, #e6e6e6 85%, #b0b0b0 100%)",
+                  "linear-gradient(135deg, #fff1b8 0%, #f6e27a 20%, #d4af37 45%, #b8860b 65%, #e7c74d 80%, #fff8d0 100%)",
               }}
             >
               Reservar visita

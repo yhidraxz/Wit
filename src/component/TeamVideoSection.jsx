@@ -24,18 +24,21 @@ export function TeamVideoSection() {
         setInView(entry.isIntersecting);
 
         if (entry.isIntersecting) {
-          // Reset end states when video comes into view
+          // Reset end states
           setEnded(false);
           setShowEndOverlay(false);
           setShowArrow(false);
 
-          if (!userInteracted) {
+          // Autoplay if user hasn't interacted
+          if (!userInteracted && videoEl.paused) {
             videoEl.muted = true;
-            const p = videoEl.play();
-            if (p && typeof p.then === "function") {
-              p.catch(() => {});
-            }
+            videoEl.play().catch(() => {});
           }
+        } else {
+          // Always pause when out of view
+          if (!videoEl.paused) videoEl.pause();
+          videoEl.currentTime = 0; // reset if you want
+          setIsPlaying(false);
         }
       },
       { threshold: 0.4 }

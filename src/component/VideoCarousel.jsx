@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { FaPlay, FaVolumeMute, FaArrowUp } from "react-icons/fa";
+import { PrimaryButton } from "./primaryButton";
 
 const videos = [
   { id: 1, src: "/testemunho2.mp4", title: "dog" },
@@ -122,7 +123,7 @@ function VideoPlayer({ src, index, title, onInView }) {
   const showOverlay = !isPlaying && !isEnded;
 
   return (
-    <div className="relative w-[70vw] h-[60vh] flex-shrink-0 snap-center">
+    <div className="relative w-[70vw] h-[80vh] flex-shrink-0 snap-center">
       <video
         ref={videoRef}
         src={src}
@@ -190,7 +191,7 @@ export function VideoCarouselSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="min-h-screen bg-black flex flex-col">
+    <div className="min-h-screen bg-black flex flex-col pb-10">
       {/* Header */}
       <div className="p-4 py-10 text-center">
         <h1 className="text-2xl font-bold text-white mb-2">
@@ -234,6 +235,13 @@ export function VideoCarouselSection() {
           display: none;
         }
       `}</style>
+      <div className="text-center">
+        <PrimaryButton
+          text="Quero fazer parte do Wit"
+          className="bg-primary items-center rounded-xl ml:btn-lg w-3/4 mt-8 transform animate-bounce
+        "
+        />
+      </div>
     </div>
   );
 }

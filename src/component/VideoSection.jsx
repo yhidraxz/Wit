@@ -24,18 +24,21 @@ export function VideoSection() {
         setInView(entry.isIntersecting);
 
         if (entry.isIntersecting) {
-          // Reset end states when video comes into view
+          // Reset end states
           setEnded(false);
           setShowEndOverlay(false);
           setShowArrow(false);
 
-          if (!userInteracted) {
+          // Autoplay if user hasn't interacted
+          if (!userInteracted && videoEl.paused) {
             videoEl.muted = true;
-            const p = videoEl.play();
-            if (p && typeof p.then === "function") {
-              p.catch(() => {});
-            }
+            videoEl.play().catch(() => {});
           }
+        } else {
+          // Always pause when out of view
+          if (!videoEl.paused) videoEl.pause();
+          videoEl.currentTime = 0; // reset if you want
+          setIsPlaying(false);
         }
       },
       { threshold: 0.4 }
@@ -56,7 +59,7 @@ export function VideoSection() {
       setEnded(true);
       setIsPlaying(false);
       setShowEndOverlay(true);
-      setTimeout(() => setShowArrow(true), 3000);
+      setTimeout(() => setShowArrow(true), 2000);
     };
 
     videoEl.addEventListener("play", onPlay);
@@ -114,7 +117,7 @@ export function VideoSection() {
   const showOverlay = !isPlaying && !isEnded;
 
   return (
-    <section className="w-full h-screen relative bg-gradient-to-b from-base-100 to-black overflow-hidden">
+    <section className="w-full h-screen relative bg-gradient-to-b from-black/80 to-black overflow-hidden">
       <video
         ref={videoRef}
         src="/NaoSomosAcademia.mp4"

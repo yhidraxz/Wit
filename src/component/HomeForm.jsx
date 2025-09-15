@@ -1,60 +1,29 @@
+import { PrimaryButton } from "./primaryButton";
+
 export function HomeForm() {
   return (
-    <div className="bg-base-100 py-12 px-6 flex flex-col justify-center items-center">
-      <h1 className="text-4xl font-bold text-center">
-        Comece a escalar suas vendas!
-      </h1>
-      <h2 className="text-xl text-accent py-2 font-semibold text-center mb-4">
-        em 30 dias, ou receba seu dinheiro de volta
-      </h2>
-      <form className="bg-white rounded-lg shadow-md p-6 w-full max-w-md">
-        <p className="text-sm text-center text-gray-500 mb-6">
-          Insira seus dados e entraremos em contato.
+    <section className="py-12 bg-gradient-to-b from-black/95 to-base-100">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl font-bold text-primary mb-4">Onde Estamos</h2>
+        <p className="text-lg text-base-light-100 mb-6">
+          O WIT Boutique está localizado em Imperatriz, Maranhão.
         </p>
-
-        <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Nome*
-          </label>
-          <input
-            type="name"
-            required
-            className="w-full input input-bordered"
-            placeholder="Seu Nome"
+        <div className="relative w-full h-96 mb-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14610.55248432309!2d-46.2597581!3d-23.9891239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92cf8b03da4747eb%3A0x92080bcbdfd2cffd!2sWIT%20Boutique!5e0!3m2!1spt-BR!2sbr!4v1633012345678"
+            className="absolute top-0 left-0 w-full h-full border-0 rounded-lg shadow-lg"
+            allowFullScreen=""
+            loading="lazy"
+            title="Localização do WIT Boutique"
+          ></iframe>
+        </div>
+        <div className="text-center">
+          <PrimaryButton
+            text="Agendar experiência exclusiva"
+            className="bg-primary items-center rounded-xl ml:btn-lg w-4/5 mt-8"
           />
         </div>
-
-        <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Email*
-          </label>
-          <input
-            type="email"
-            required
-            className="w-full input input-bordered"
-            placeholder="seuemail@exemplo.com"
-          />
-        </div>
-
-        <div className="mb-6">
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Telefone*
-          </label>
-          <input
-            type="tel"
-            required
-            className="w-full input input-bordered"
-            placeholder="(99) 99999-9999"
-          />
-        </div>
-
-        <button
-          type="submit"
-          className="btn w-full bg-primary border-none text-white hover:scale-90"
-        >
-          Quero começar a escalar!
-        </button>
-      </form>
-    </div>
+      </div>
+    </section>
   );
 }

@@ -7,7 +7,6 @@ import { HomeForm } from "../component/HomeForm.jsx";
 import { Footer } from "../component/Footer.jsx";
 import { TeamVideoSection } from "../component/TeamVideoSection.jsx";
 import { VideoCarouselSection } from "../component/VideoCarousel.jsx";
-import { TestVideo } from "../component/TestVideo.jsx";
 
 export function Home() {
   return (
