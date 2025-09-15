@@ -3,9 +3,9 @@ import { FaPlay, FaVolumeMute, FaArrowUp } from "react-icons/fa";
 import { PrimaryButton } from "./primaryButton";
 
 const videos = [
-  { id: 1, src: "/testemunho2.mp4", title: "dog" },
-  { id: 2, src: "/testemunho1.mp4", title: "cat" },
-  { id: 3, src: "/testemunho3.mp4", title: "bird" },
+  { id: 1, src: "/testemunho2.mp4", title: "Saúde" },
+  { id: 2, src: "/testemunho1.mp4", title: "Segurança" },
+  { id: 3, src: "/testemunho3.mp4", title: "Acolhimento" },
 ];
 
 // 🔹 Individual Video Player
