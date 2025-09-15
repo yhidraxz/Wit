@@ -14,7 +14,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/95  to-transparent to-50%"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-start ml:justify-center h-full text-center px-4 ml:justify-center">
+      <div className="relative ml:-top-20 z-10 flex flex-col items-center justify-start  h-full text-center px-4 ml:justify-center">
         {/* Title */}
         <h1 className="mt-24 text-4xl md:text-6xl font-extrabold drop-shadow-md ml:pb-8">
           <span className="text-primary">Poucos</span> têm acesso.. <br />
