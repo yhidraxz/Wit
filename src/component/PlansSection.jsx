@@ -40,8 +40,8 @@ export function PlansSection() {
         plans={[
           {
             id: 1,
-            title: "Diária",
-            price: "R$ 29,99 / dia",
+            title: "Mensal",
+            price: "R$ 232 / mês",
             description: "Acesso por um dia.",
             features: [
               "Pagamento em Dinheiro, Pix ou Cartão",
@@ -52,11 +52,11 @@ export function PlansSection() {
           },
           {
             id: 2,
-            title: "Mensal",
+            title: "Anual Crédito",
             price: "R$ 187,00 / mês",
             description: "Plano completo para evolução contínua.",
             features: [
-              "Pagamento em Pix ou Cartão",
+              "Pagamento no Cartão",
               "Musculação",
               "Treinos Montados individualmente",
               "Aeróbio",
@@ -67,14 +67,13 @@ export function PlansSection() {
           },
           {
             id: 3,
-            title: "Anual",
-            price: "R$ 147,00 / mês",
+            title: "Anual Recorrente",
+            price: "R$ 187,00 / mês",
             description: "Mais economia e compromisso com sua saúde.",
             features: [
               "Pagamento Recorrente em Pix ou Cartão",
               "Todas as modalidades",
               "Programa de Treino individual",
-              "Melhor custo-benefício",
             ],
             link: "https://wa.me/5591992487292?text=Ol%C3%A1!%20Gostaria%20de%20fechar%20um%20plano%20anual%20na%20Nativa",
           },
