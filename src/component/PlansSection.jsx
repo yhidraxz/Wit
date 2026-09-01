@@ -53,7 +53,7 @@ export function PlansSection() {
           {
             id: 2,
             title: "Anual Crédito",
-            price: "R$ 187,00 / mês",
+            price: "R$ 167,00 / mês",
             description: "Plano completo para evolução contínua.",
             features: [
               "Pagamento no Cartão",
