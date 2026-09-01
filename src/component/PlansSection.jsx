@@ -41,7 +41,7 @@ export function PlansSection() {
           {
             id: 1,
             title: "Mensal",
-            price: "R$ 232 / mês",
+            price: "R$ 232,00 / mês",
             description: "Acesso por um dia.",
             features: [
               "Pagamento em Dinheiro, Pix ou Cartão",
