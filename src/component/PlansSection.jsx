@@ -41,7 +41,7 @@ export function PlansSection() {
           {
             id: 1,
             title: "Mensal",
-            price: "R$ 232,00 / mês",
+            price: "R$ 197,00 / mês",
             description: "Acesso por um dia.",
             features: [
               "Pagamento em Dinheiro, Pix ou Cartão",
@@ -53,7 +53,7 @@ export function PlansSection() {
           {
             id: 2,
             title: "Anual Crédito",
-            price: "R$ 167,00 / mês",
+            price: "R$ 157,00 / mês",
             description: "Plano completo para evolução contínua.",
             features: [
               "Pagamento no Cartão",
@@ -68,7 +68,7 @@ export function PlansSection() {
           {
             id: 3,
             title: "Anual Recorrente",
-            price: "R$ 187,00 / mês",
+            price: "R$ 167,00 / mês",
             description: "Mais economia e compromisso com sua saúde.",
             features: [
               "Pagamento Recorrente em Pix ou Cartão",
